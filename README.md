@@ -1,88 +1,129 @@
-Bank Management System
-📌 Project Overview
 
-The Bank Management System is a web-based application developed using Java Servlets, HTML, and JDBC.
-The system allows administrators to manage bank accounts efficiently by performing complete CRUD operations with secure session handling and logout functionality.
+# 📄 Project Description
 
-🚀 Features
+The **Bank Account Management System** is a web-based application developed using **Java Servlets,HTML, and CSS**. The project allows users to perform basic banking operations such as adding a new account, viewing account details, updating account information, and deleting accounts from the system.
 
-✅ Create new bank accounts
-✅ View account details
-✅ Update customer information
-✅ Delete bank accounts
-✅ Login & Logout functionality
-✅ Real-time database connectivity using JDBC
-✅ Dynamic request–response handling using Servlets
-✅ User-friendly HTML interface
+The application uses **Java Servlets** to handle client requests and process business logic, while **Hibernate ORM** is used to manage database operations and simplify interaction with the database. HTML forms are used to collect user input, and CSS is used to design the user interface.
 
-🛠️ Technologies Used
+Each operation is handled by a dedicated servlet such as **AddAccountServlet, DeleteAccountServlet, UpdateAccountServlet, and ViewAccountServlet**, making the application modular and easy to maintain.
 
-Frontend:
+This project demonstrates the implementation of **CRUD operations, servlet-based web development, database connectivity, and transaction management using Hibernate**. It helps in understanding the architecture of Java web applications and how backend technologies interact with frontend interfaces.
 
-HTML
+# 🏦 Bank Account Management System (Java Servlet + Hibernate)
 
-CSS
+## 📌 Project Overview
+The Bank Account Management System is a web-based application developed using Java Servlets and Hibernate ORM. The system allows users to manage bank account records by performing operations such as adding new accounts, viewing account details, updating account information, and deleting accounts.
 
-Backend:
+The application demonstrates the use of Java web technologies along with Hibernate for efficient database interaction and transaction management.
 
-Java Servlets
+---
 
-JDBC
+## 🚀 Features
 
-Database:
+- Add new bank account
+- View account details
+- Update account information
+- Delete account records
+- Logout functionality
+- Database operations using Hibernate ORM
+- Simple and user-friendly interface
 
-MySQL / Oracle Database
+---
 
-Server:
+## 🛠 Technologies Used
 
-Apache Tomcat
+### Backend
+- Java
+- Java Servlets
+- Hibernate ORM
 
-📂 Project Structure
-BankManagementSystem/
+### Frontend
+- HTML
+- CSS
+
+### Server
+- Apache Tomcat
+
+### Tools
+- Eclipse IDE
+
+---
+
+## 📁 Project Structure
+
+```
+ProjectonServlet
 │
-├── src/main/java/
+├── src/main/java/bank
 │   ├── AddAccountServlet.java
-│   ├── ViewAccountServlet.java
-│   ├── UpdateAccountServlet.java
 │   ├── DeleteAccountServlet.java
-│   ├── LoginServlet.java
+│   ├── UpdateAccountServlet.java
+│   ├── ViewAccountServlet.java
 │   └── LogoutServlet.java
 │
-├── src/main/webapp/
+├── src/main/webapp
 │   ├── index.html
-│   ├── login.html
-│   ├── addAccount.html
-│   ├── updateAccount.html
+│   ├── add.html
 │   ├── delete.html
-│   ├── logout.html
+│   ├── update.html
+│   ├── view.html
 │   └── style.css
-⚙️ How It Works
+│
+└── hibernate.cfg.xml
+```
 
-1.User logs in through login.html
-2.After successful login → redirected to index.html
+---
 
-3.User can:
+## ⚙️ How It Works
 
-Add Account
+1. User enters account details through HTML forms.
+2. The request is sent to a corresponding Servlet.
+3. The Servlet processes the request.
+4. Hibernate ORM handles database operations.
+5. The result is displayed to the user.
 
-View Account
+---
 
-Update Account
+## ▶️ How to Run the Project
 
-Delete Account
+### Step 1: Install Requirements
+- Java JDK
+- Eclipse IDE
+- Apache Tomcat Server
+- MySQL / Oracle Database
 
-4.Logout option ends the session securely.
+### Step 2: Import Project
+Import the project into Eclipse as a **Dynamic Web Project**.
 
-▶️ How to Run
+### Step 3: Configure Database
+Update the database connection in:
 
-1.Install Database (MySQL / Oracle)
+```
+hibernate.cfg.xml
+```
 
-2.Create required table
+### Step 4: Deploy Project
+Run the project on **Apache Tomcat Server**.
 
-3.Configure DB connection in Servlets
+### Step 5: Open in Browser
 
-4.Deploy project on Apache Tomcat
+```
+http://localhost:8080/ProjectonServlet
+```
 
-5.Open in browser:
+---
 
-http://localhost:8080/BankManagementSystem
+## 💡 Learning Outcomes
+
+- Java Servlet development
+- CRUD operations in web applications
+- Hibernate ORM integration
+- Database transaction management
+- Building Java web applications using MVC structure
+
+---
+
+## 👩‍💻 Author
+
+**Shirisha Vangala**
+
