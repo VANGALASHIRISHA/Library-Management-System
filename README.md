@@ -1,129 +1,134 @@
+Got it 👍 — I’ve removed **Screenshots** and **Contributing** sections and kept it clean and professional.
 
-# 📄 Project Description
+Use this final version 👇
 
-The **Bank Account Management System** is a web-based application developed using **Java Servlets,HTML, and CSS**. The project allows users to perform basic banking operations such as adding a new account, viewing account details, updating account information, and deleting accounts from the system.
+---
 
-The application uses **Java Servlets** to handle client requests and process business logic, while **Hibernate ORM** is used to manage database operations and simplify interaction with the database. HTML forms are used to collect user input, and CSS is used to design the user interface.
-
-Each operation is handled by a dedicated servlet such as **AddAccountServlet, DeleteAccountServlet, UpdateAccountServlet, and ViewAccountServlet**, making the application modular and easy to maintain.
-
-This project demonstrates the implementation of **CRUD operations, servlet-based web development, database connectivity, and transaction management using Hibernate**. It helps in understanding the architecture of Java web applications and how backend technologies interact with frontend interfaces.
-
-# 🏦 Bank Account Management System (Java Servlet + Hibernate)
+# 📚 Library Management System
 
 ## 📌 Project Overview
-The Bank Account Management System is a web-based application developed using Java Servlets and Hibernate ORM. The system allows users to manage bank account records by performing operations such as adding new accounts, viewing account details, updating account information, and deleting accounts.
 
-The application demonstrates the use of Java web technologies along with Hibernate for efficient database interaction and transaction management.
+The **Library Management System** is a web-based application developed using **Java Servlets, HTML, and CSS**. It helps manage library operations such as adding books, viewing records, issuing books, returning books, and deleting entries.
+
+The system uses a simple frontend (`index.html`) to interact with backend **Java Servlets**, which handle all the business logic and database operations using **JDBC**.
 
 ---
 
 ## 🚀 Features
 
-- Add new bank account
-- View account details
-- Update account information
-- Delete account records
-- Logout functionality
-- Database operations using Hibernate ORM
-- Simple and user-friendly interface
+* ➕ Add new books
+* 📖 View all books
+* ✏️ Update book details
+* ❌ Delete books
+* 📥 Issue books to users
+* 📤 Return books
+* 🔍 Search books by ID, title, or author
+* 👤 Manage user/student records
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technologies Used
 
-### Backend
-- Java
-- Java Servlets
-- Hibernate ORM
+### 🔹 Backend
 
-### Frontend
-- HTML
-- CSS
+* Java
+* Java Servlets
+* JDBC
 
-### Server
-- Apache Tomcat
+### 🔹 Frontend
 
-### Tools
-- Eclipse IDE
+* HTML
+* CSS
+
+### 🔹 Database
+
+* MySQL
+
+### 🔹 Server
+
+* Apache Tomcat
+
+### 🔹 Tools
+
+* Eclipse IDE
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
-ProjectonServlet
+ServletProject/
 │
-├── src/main/java/bank
-│   ├── AddAccountServlet.java
-│   ├── DeleteAccountServlet.java
-│   ├── UpdateAccountServlet.java
-│   ├── ViewAccountServlet.java
-│   └── LogoutServlet.java
+├── src/main/java/
+│   └── (Servlet classes)
+│       ├── AddBookServlet.java
+│       ├── ViewBookServlet.java
+│       ├── UpdateBookServlet.java
+│       ├── DeleteBookServlet.java
+│       ├── IssueBookServlet.java
+│       └── ReturnBookServlet.java
 │
-├── src/main/webapp
+├── src/main/webapp/
 │   ├── index.html
-│   ├── add.html
-│   ├── delete.html
-│   ├── update.html
-│   ├── view.html
-│   └── style.css
+│   └── css/
+│       └── style.css
 │
-└── hibernate.cfg.xml
+├── .classpath
+├── .project
+├── README.md
 ```
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Installation & Setup
 
-1. User enters account details through HTML forms.
-2. The request is sent to a corresponding Servlet.
-3. The Servlet processes the request.
-4. Hibernate ORM handles database operations.
-5. The result is displayed to the user.
-
----
-
-## ▶️ How to Run the Project
-
-### Step 1: Install Requirements
-- Java JDK
-- Eclipse IDE
-- Apache Tomcat Server
-- MySQL / Oracle Database
-
-### Step 2: Import Project
-Import the project into Eclipse as a **Dynamic Web Project**.
-
-### Step 3: Configure Database
-Update the database connection in:
+### 1️⃣ Clone the Repository
 
 ```
-hibernate.cfg.xml
+git clone https://github.com/your-username/library-management-system.git
 ```
 
-### Step 4: Deploy Project
-Run the project on **Apache Tomcat Server**.
+### 2️⃣ Import into Eclipse
 
-### Step 5: Open in Browser
+* Open **Eclipse IDE**
+* Go to **File → Import → Existing Projects into Workspace**
+* Select your project folder
+
+### 3️⃣ Configure Database
+
+* Create a MySQL database
+* Create required tables (books, users, issue records)
+* Update database credentials in your servlet (JDBC code)
+
+### 4️⃣ Configure Server
+
+* Install **Apache Tomcat**
+* Add project to server
+
+### 5️⃣ Run the Application
+
+* Start the server
+* Open in browser:
 
 ```
-http://localhost:8080/ProjectonServlet
+http://localhost:8081/ServletProject/index.html
 ```
 
 ---
 
-## 💡 Learning Outcomes
+## 💡 How It Works
 
-- Java Servlet development
-- CRUD operations in web applications
-- Hibernate ORM integration
-- Database transaction management
-- Building Java web applications using MVC structure
-
+1. User opens **index.html**
+2. User selects an operation (Add / View / Issue / Return)
+3. Form data is sent to corresponding Servlets
+4. Servlets process logic and interact with database using JDBC
+5. Results are displayed to the user
 ---
 
 ## 👩‍💻 Author
 
-**Shirisha Vangala**
+VANGALA SHIRISHA
 
+---
+
+##
